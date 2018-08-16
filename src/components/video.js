@@ -3,9 +3,13 @@ import styled from 'styled-components';
 
 const VideoCard = styled.div`
   position: relative;
-  width: 33%;
   height: 250px;
-  display: block;
+  flex: 1;
+  margin-right: 30px;
+  
+  :last-child {
+    margin-right: 0;
+  }
 `;
 
 const VideoCardThumbnail = styled.img`
