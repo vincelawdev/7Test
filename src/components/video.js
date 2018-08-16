@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const VideoCard = styled.div`
   position: relative;
@@ -57,6 +58,11 @@ const Video = (props) => {
       </VideoCardText>
     </VideoCard>
   );
+};
+
+Video.propTypes = {
+  title: PropTypes.string.isRequired,
+  thumbnail: PropTypes.string.isRequired
 };
 
 export default Video;
