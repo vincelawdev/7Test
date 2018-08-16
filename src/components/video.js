@@ -4,12 +4,18 @@ import PropTypes from 'prop-types';
 
 const VideoCard = styled.div`
   position: relative;
-  height: 250px;
-  flex: 1;
-  margin-right: 30px;
+  display: block;
+  margin: 0 0 30px 0;
   
-  :last-child {
-    margin-right: 0;
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    flex: 1;
+    margin-bottom: 0;
+    margin-right: 30px;
+    
+    &:last-child {
+      margin-right: 0;
+    }
   }
 `;
 
