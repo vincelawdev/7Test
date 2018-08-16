@@ -7,10 +7,14 @@ import registerServiceWorker from './registerServiceWorker';
 injectGlobal`
   body {
     margin: 0;
-    padding: 40px;
+    padding: 20px;
     background-color: black;
     font-family: sans-serif;
-  }
+    
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+      padding: 40px;
+    }
 `;
 
 ReactDOM.render(<App />, document.getElementById('root'));
